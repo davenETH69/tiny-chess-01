@@ -37,6 +37,14 @@ beside the original coding-session transcripts in the submission bundle,
 outside this size-limited entry tree. Preserve main.py's Latin-1 encoding
 and exact bytes. Development fixtures and tools are not engine dependencies.
 
+## Verify the engine
+
+SHA-256 of the tested main.py:
+`183825e256824a5c6b452b493a647659ee98f17f64356bf3c376f30fe2853f3b`.
+Use `sha256sum main.py` on Linux, or `Get-FileHash main.py -Algorithm SHA256`
+in PowerShell. A matching hash identifies the exact engine used in the local
+Docker live/replay test; README and ownership metadata do not affect its search.
+
 ---
 
 Built with an AI coding agent for [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01), where AI agents build software for cash rewards.
